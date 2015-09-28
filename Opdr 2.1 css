@@ -1,0 +1,275 @@
+/* ---------- TYPO ----------- */
+p {
+    padding: 0 1em 0 1em;
+    text-shadow: .1em .1em .1em #000;
+}
+
+h1 {
+  font-size: 3vw;
+}
+
+h2 {
+    background-color: grey;
+    color: white;
+    padding: 1em;
+    margin: 0;
+}
+
+em {
+    background-color: coral;
+}
+/* ---------- TYPO ----------- */
+
+/* ---------- MAIN ----------- */
+header {
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+body > header {
+    order: -1;
+    width: 100%;
+}
+
+body > main {
+    margin-top: 2em;
+    order: -1;
+    width: 60%;
+}
+
+main {
+    background-color: #f7f7f7;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    text-align: justify;
+}
+
+article {
+    width: 100%;
+}
+/* ---------- MAIN ----------- */
+
+/* ---------- ASIDE ---------- */
+body > aside {
+    height: 100%;
+    margin-left: 5%;
+    margin-top: 2em;
+    order: -1;
+    padding: 1em;
+    width: 20em;
+    box-sizing: border-box;
+}
+aside {
+    background-color: #5eaade;
+    color: #fefefe;
+}
+/* ---------- ASIDE ---------- */
+
+/* ----- NAVIGATION ----- */
+nav {
+    width: 100%;
+    height: 3em;
+    background-color: aquamarine;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    float: left;
+    margin-right: .5em;
+    padding: .5em;
+    background-color: burlywood;
+    box-sizing: border-box;
+    line-height: 2em;
+}
+
+nav ul li a:hover {
+    background-color: brown;
+}
+
+.to-profile a {
+    padding: .5em;
+    background-color: aquamarine;
+    line-height: 2em;
+    float: right;
+}
+
+.to-profile a:hover {
+    padding: .5em;
+    color: white;
+    background-color: deeppink;
+}
+
+header form {
+    float: right;
+}
+
+@media (max-width: 600px) {
+  nav ul li a {
+    width: 100%;
+  }
+}
+/* --- END NAVIGATION --- */
+/* ----- CHILD SELECTORS ----- */
+main > article > header > p {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+article > section > h3 {
+    font-size: 135%;
+    text-shadow: 0 0 .1em blue;
+    padding: .8em;
+}
+
+article > section > h4 {
+    font-size: 120%;
+    text-shadow: 0 0 .1em red;
+    padding: .8em;
+}
+
+article > header > h1{
+    background-color: darkcyan;
+    padding: 1em;
+    color: white;
+}
+
+aside > section > article {
+    float: left;
+    width: 20em;
+    padding: 2em;
+    box-sizing: border-box;
+}
+/* ----- CHILD SELECTORS ----- */
+
+/* ----- SIBLING SELECTOR ---- */
+p + p {
+    margin: -1em 0 1em;
+    text-indent: 1.5em;
+}
+/* ----- SIBLING SELECTOR ---- */
+
+/* ------ MEDIA QUERIES ------ */
+@media (min-width: 31.250em) {
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+    font-size: 1em;
+}
+
+@media (min-width: 62.500em) {
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+    font-size: 1em;
+}
+
+@media (max-width: 800px) {
+  .related article {
+    width: 100%;
+  }
+}
+/* ------ MEDIA QUERIES ------ */
+
+/* ------ MEER LEZEN ------- */
+.related {
+    width: 100%;
+}
+
+.related article {
+    background-color: aqua;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.related header {
+    background-color: crimson;
+    padding: 1em;
+    color: white;
+    box-sizing: border-box;
+}
+
+.related footer {
+    background-color: darkblue;
+    padding: 1em;
+    color: white;
+}
+
+.related header p {
+    display: inline;
+}
+
+.related article p {
+    background-color: aquamarine;
+}
+/* ------ MEER LEZEN ------- */
+
+/* -------- FOOTER --------- */
+footer > section {
+    width: 25%;
+}
+
+input {
+    padding: .5em;
+    margin: .5em;
+}
+
+body > footer {
+    clear: both;
+    display: flex;
+    flex-flow: row wrap;
+    float: none;
+}
+body > footer {
+    background-color: #353434;
+    color: #fefefe;
+}
+body > footer {
+    border-top: 2px solid #5eaade;
+}
+body > footer > section:last-of-type {
+    background-color: #5eaade;
+    text-align: center;
+    width: 100%;
+}
+body > footer > section:last-of-type {
+    text-align: center;
+}
+body > footer > section:last-of-type a {
+    color: #353434;
+}
+
+body > footer > section > h2{
+    padding: 1em;
+    background-color: #5eaade;
+}
+/* -------- FOOTER --------- */
+
+img {
+    width: 100%;
+    transition:All 1s ease;
+}
+
+img:hover {
+    transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+}
+
+#about {
+
+}
+
+#credits {
+    width: 100%;
+}
