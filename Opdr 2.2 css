@@ -1,0 +1,351 @@
+* { margin: 0; padding: 0; }
+
+html, body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100%;
+    background-color: red;
+    order: 0;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+main {
+    width: 75%;
+    background-color: blue;
+    order: 1;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+aside {
+    width: 25%;
+    background-color: yellow;
+    order: 1;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.related {
+    width: 100%;
+    margin: 0 auto;
+    background-color: green;
+    order: 3;
+}
+
+footer {
+    width: 100%;
+    background-color: orange;
+    order: 4;
+}
+
+h1 {
+    font-size: 3vw;
+    font-family: sans-serif;
+    padding: 20px;
+    background: #BADA55;
+    border: .5em solid green;
+}
+/* ----- RELATED ----- */
+.related {
+    width: 100%;
+}
+
+.related h2 {
+    background-color: grey;
+    color: white;
+    padding: 1em;
+    margin: 0;
+}
+
+.related > article {
+    width: 33.333%;
+    float: left;
+}
+
+section > article > section {
+    padding: 2em;
+    text-align: justify;
+}
+/* ----- END RELATED ----- */
+
+/* ----- NAVIGATION ----- */
+header > nav {
+    width: 100%;
+    height: 3em;
+    background-color: aquamarine;
+}
+
+header > nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header > nav ul li a {
+    float: left;
+    margin-right: .5em;
+    padding: .5em;
+    background-color: burlywood;
+    box-sizing: border-box;
+    line-height: 2em;
+    transition: All .5s ease;
+}
+
+header > nav ul li a:hover {
+    background-color: brown;
+    transform: skew(10deg);
+}
+
+.to-profile a {
+    padding: .5em;
+    background-color: aquamarine;
+    line-height: 2em;
+    float: right;
+}
+
+.to-profile a:hover {
+    padding: .5em;
+    color: white;
+    background-color: deeppink;
+}
+
+header form {
+    float: right;
+    line-height: 3em;
+    transform: rotate(-4deg);
+    transition: All .5s ease;
+}
+
+header form:hover {
+    transform: rotate(7deg);
+}
+
+header > img {
+    width: 100%;
+}
+/* --- END NAVIGATION --- */
+
+/* --- END ASIDE --- */
+aside h2 {
+    background-color: grey;
+    color: white;
+    padding: 1em;
+    margin: 0;
+}
+aside > h2 a {
+    color: white;
+    text-decoration: none;
+    transition:All 1s ease;
+}
+
+aside > h2 a:hover {
+    color: black;
+}
+/* --- END ASIDE --- */
+
+/* -------- FOOTER --------- */
+body > footer > section {
+    width: 25%;
+}
+body > footer >section > form > input {
+    padding: .5em;
+    margin: .5em 0 0 0;
+}
+body > footer {
+    clear: both;
+    display: flex;
+    flex-flow: row wrap;
+    float: none;
+}
+body > footer {
+    background-color: #353434;
+    color: #fefefe;
+}
+body > footer {
+    border-top: 2px solid #5eaade;
+}
+body > footer > section {
+    padding: 2em;
+    box-sizing: border-box;
+}
+body > footer > section:last-of-type {
+    background-color: #5eaade;
+    text-align: center;
+    width: 100%;
+}
+body > footer > section:last-of-type {
+    text-align: center;
+}
+body > footer > section:last-of-type a {
+    color: #353434;
+}
+body > footer > section > h1{
+    border: none;
+    padding: 1em;
+    background-color: #5eaade;
+}
+/* -------- FOOTER --------- */
+
+/* -------- FORM --------- */
+main > form {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 100%;
+}
+
+main > form > fieldset {
+    box-shadow: 0 0 0.5em black;
+    padding: 1em;
+    border: 0;
+    background-color: #ebebeb;
+    border-radius: 0 .5em .5em 0;
+    margin-top: 1em;
+}
+
+#project > fieldset {
+    box-shadow: 0 0 0.5em black;
+    padding: 1em;
+    border: 0;
+    background-color: #ebebeb;
+    border-radius: 0 .5em .5em 0;
+    margin-top: 1em;
+}
+
+#stage > fieldset  {
+    box-shadow: 0 0 0.5em black;
+    padding: 1em;
+    border: 0;
+    background-color: #ebebeb;
+    border-radius: 0 .5em .5em 0;
+    margin-top: 1em;
+}
+
+#project > fieldset > legend {
+    background-color: black;
+    color: white;
+    padding: .3em;
+}
+
+#stage > fieldset > legend {
+    background-color: black;
+    color: white;
+    padding: .3em;
+}
+
+main > form > fieldset > legend {
+    padding: .2em;
+    font-size: 1.2em;
+    background: black;
+    color: white;
+}
+
+main > form > fieldset > label {
+    margin: 20px;
+    display: block;
+}
+
+main > form > fieldset > label > input {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: .2em;
+    border: .3em solid #737373;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+
+    margin: .3em 0;
+    padding: 0.1em;
+}
+
+main > form > fieldset > label > input:hover {
+    border: .3em solid #f16723;
+}
+
+main > form > fieldset > label > input:focus {
+    box-shadow:  0 0 .9em #f16723;
+    border: .3em solid #f16723;
+}
+
+main > form > fieldset > label > textarea {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: .2em;
+    border: .3em solid #737373;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+
+    margin: .3em 0;
+    padding: 0.1em;
+}
+
+main > form > fieldset > label > textarea:hover {
+    border: .3em solid #f16723;
+}
+
+main > form > fieldset > label > textarea:focus {
+    box-shadow:  0 0 .9em #f16723;
+    border: .3em solid #f16723;
+}
+
+[for="name"]:after,
+[for="bedrijf"]:after,
+[for="adres"]:after,
+[for="postcode"]:after,
+[for="email"]:after {
+    content: "*";
+    color: red;
+}
+/* -------- END FORM --------- */
+
+/* ----- SIBLING SELECTOR ---- */
+p + p {
+    margin: .5em 0 1em;
+    text-indent: 1.5em;
+}
+/* ----- SIBLING SELECTOR ---- */
+
+/* ---- ATTRIBUTE SELECTOR ----*/
+[for="naam"]:after,
+[for="email"]:after {
+    content: " *";
+    color: red;
+}
+/* ---- ATTRIBUTE SELECTOR ----*/
+
+/* --- MEDIA QUERY --- */
+@media (max-width: 700px) {
+  nav ul li a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+  .related article {
+    width: 100%;
+  }
+  body > footer > section {
+    width: 100%;
+  }
+}
+/* --- END MEDIA QUERY --- */
