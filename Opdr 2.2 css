@@ -47,7 +47,7 @@ footer {
 h1 {
     font-size: 3vw;
     font-family: sans-serif;
-    padding: 20px;
+    padding: .8em;
     background: #BADA55;
     border: .5em solid green;
 }
@@ -168,7 +168,7 @@ body > footer {
     color: #fefefe;
 }
 body > footer {
-    border-top: 2px solid #5eaade;
+    border-top: .5em solid #5eaade;
 }
 body > footer > section {
     padding: 2em;
@@ -246,7 +246,7 @@ main > form > fieldset > legend {
 }
 
 main > form > fieldset > label {
-    margin: 20px;
+    margin: .5em;
     display: block;
 }
 
@@ -302,6 +302,10 @@ main > form > fieldset > label > textarea:focus {
     border: .3em solid #f16723;
 }
 
+main > form > input {
+    width: 100%;
+}
+
 [for="name"]:after,
 [for="bedrijf"]:after,
 [for="adres"]:after,
@@ -348,4 +352,6 @@ p + p {
     width: 100%;
   }
 }
-/* --- END MEDIA QUERY --- */
+/* --- ENDMEDIA QUERY --- */
+
+
